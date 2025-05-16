@@ -1,15 +1,3 @@
-function alterarStatusBotao() {
-  let botao = document.getElementById("btn-reiniciar");
-
-  if (botao.classList.contains('container_botao-desabilitado')) {
-    botao.classList.remove('container_botao-desabilitado');
-    botao.classList.add('container_botao');
-  } else {
-    botao.classList.remove("container_botao");
-    botao.classList.add("container_botao-desabilitado");
-  }
-}
-
 function sortear() {
   let quant = parseInt(document.getElementById("quantidade").value);
   let de = parseInt(document.getElementById("de").value);
@@ -42,7 +30,17 @@ function sortear() {
   }
 }
 
+function alterarStatusBotao() {
+  let botao = document.getElementById("btn-reiniciar");
 
+  if (botao.classList.contains('container_botao-desabilitado')) {
+    botao.classList.remove('container_botao-desabilitado');
+    botao.classList.add('container_botao');
+  } else {
+    botao.classList.remove("container_botao");
+    botao.classList.add("container_botao-desabilitado");
+  }
+}
 
 function reiniciar() {
   document.getElementById("quantidade").value = "";
