@@ -7,6 +7,7 @@ function adicionar() {
   let nomeProduto = produto.split("-")[0];
   let valorUnitario = produto.split("R$")[1];
   let quantidade = document.getElementById("quantidade").value;
+  if (verificaQuant(quantidade)){
   let preco = quantidade * valorUnitario;
   let carinho = document.getElementById("lista-produtos");
   carinho.innerHTML =
@@ -18,6 +19,17 @@ function adicionar() {
   let campoTotal = document.getElementById("valor-total");
   campoTotal.textContent = `R$ ${totalGeral}`;
   document.getElementById("quantidade").value = 0;
+  } else {
+    alert("Quantidade inválida !!!");
+  }
+}
+
+function verificaQuant(quantidade){
+  if(quantidade <= 0){
+    return false;
+  } else {
+    return true;
+  }
 }
 
 function limpar() {
