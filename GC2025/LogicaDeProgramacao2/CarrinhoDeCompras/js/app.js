@@ -40,7 +40,6 @@ function limpar() {
   document.getElementById("valor-total").innerHTML = "R$ 0";
 }
 
-//Hora da pratica
 
 function mudarTexto(preco,quantidade) {
   let teste = document.getElementById("teste");
