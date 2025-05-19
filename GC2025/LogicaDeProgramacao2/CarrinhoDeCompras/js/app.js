@@ -39,8 +39,6 @@ function limpar() {
   document.getElementById("lista-produtos").innerHTML = "";
   document.getElementById("valor-total").innerHTML = "R$ 0";
 }
-
-
 function mudarTexto(preco,quantidade) {
   let teste = document.getElementById("teste");
   let final = preco * quantidade;
