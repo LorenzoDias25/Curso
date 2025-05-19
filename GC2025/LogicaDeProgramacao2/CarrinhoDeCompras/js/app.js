@@ -39,8 +39,15 @@ function limpar() {
   document.getElementById("lista-produtos").innerHTML = "";
   document.getElementById("valor-total").innerHTML = "R$ 0";
 }
+
+// Hora da pratica 
+
 function mudarTexto(preco,quantidade) {
   let teste = document.getElementById("teste");
   let final = preco * quantidade;
   teste.textContent = `Preço: ${preco} Quantidade: ${quantidade} Total: R$ ${final}`;
+}
+
+function separarString(){
+  
 }
